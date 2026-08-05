@@ -58,6 +58,20 @@
         "name": "VetFlowCare"
       },
       "keywords": "VetFlowCare, gestão veterinária, app veterinário, prontuário veterinário, receituário veterinário, clínica veterinária, B&G Systems, app offline veterinário",
+      "disambiguatingDescription": "VetFlowCare é um aplicativo brasileiro de gestão veterinária desenvolvido pela B&G Systems no Brasil. Produto nacional voltado exclusivamente para veterinários brasileiros. Não tem relação com sistemas de gestão veterinária de outros países nem com suplementos veterinários de nomes semelhantes.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil",
+        "identifier": "BR"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Médicos Veterinários",
+        "geographicArea": {
+          "@type": "Country",
+          "name": "Brasil"
+        }
+      },
       "inLanguage": "pt-BR",
       "countryOfOrigin": "BR",
       "featureList": [
@@ -557,6 +571,16 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 }
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
+
+/* ---------- hero slideshow ---------- */
+.hero-slideshow{width:100%;height:100%;position:relative;border-radius:30px;overflow:hidden;background:#EDF8F7}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .85s ease;z-index:1}
+.hero-slide.active{opacity:1;z-index:2}
+.hero-screen-img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;image-orientation:from-image}
+.hero-dots{display:flex;gap:6px;justify-content:center;margin-top:14px}
+.hero-dot{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.32);transition:background .3s,width .3s;cursor:pointer;border:none;padding:0;flex-shrink:0}
+.hero-dot.active{background:var(--teal);width:20px}
+
 </style>
 </head>
 <body>
@@ -619,122 +643,38 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
       <div class="slogan">ORGANIZA · CONECTA · CUIDA</div>
     </div>
 
-    <!-- elemento-assinatura: o app rodando de verdade -->
+    <!-- capturas reais do app rodando -->
     <div class="stage">
       <div class="phone">
         <div class="screen">
           <div class="notch"></div>
-          <div class="app-head">
-            <div class="row1">
-              <span class="lg">🐾</span>
-              <span>
-                <div class="nm">Vet<i>Flow</i></div>
-                <div class="cr">Care</div>
-              </span>
-              <span class="chip-u">👩‍⚕️ Dra. Linda</span>
+          <div class="hero-slideshow" id="heroSlideshow">
+            <div class="hero-slide active">
+              <img class="hero-screen-img" src="screen1.jpg.jpeg" alt="VetFlowCare — tela inicial com índice de saúde dos pacientes, Caramelo e Fumaça com 100% de saúde">
             </div>
-            <div class="scorecard">
-              <div class="lbl">ÍNDICE DE SAÚDE DOS PACIENTES</div>
-              <div class="rw">
-                <div class="ring" style="width:42px;height:42px;font-size:10px"><span>96%</span></div>
-                <div>
-                  <div class="big">12 pacientes</div>
-                  <div class="sm">⚠ 1 vacina vence esta semana</div>
-                </div>
-              </div>
+            <div class="hero-slide">
+              <img class="hero-screen-img" src="screen2.jpg.jpeg" alt="VetFlowCare — lista de pacientes: Caramelo, Chulapa, Dony, Faísca e Fumaça, todos em dia">
             </div>
-          </div>
-
-          <div class="body-scroll">
-            <!-- INÍCIO -->
-            <div class="tabpane on" id="pane-inicio" role="tabpanel" aria-labelledby="tab-inicio">
-              <div class="mini-card mini-row" style="cursor:default">
-                <span style="font-size:14px">💰</span>
-                <b style="font-size:11px">Financeiro</b>
-                <span style="margin-left:auto;width:7px;height:7px;border-radius:50%;background:#E05252"></span>
-              </div>
-              <div class="mini-lbl">PACIENTES</div>
-              <div class="pets">
-                <div class="pet"><div class="e">🐕</div><div class="n">Caramelo</div><div class="b">Vira-lata</div><div class="ring"><span>100%</span></div></div>
-                <div class="pet"><div class="e">🐈</div><div class="n">Fumaça</div><div class="b">Gato</div><div class="ring"><span>92%</span></div></div>
-                <div class="pet"><div class="e">🐕</div><div class="n">Mel</div><div class="b">Shih tzu</div><div class="ring"><span>96%</span></div></div>
-              </div>
-              <div class="mini-lbl">📅 PRÓXIMOS 7 DIAS</div>
-              <div class="evt">
-                <span class="ic" style="background:#EEF4FA">💉</span>
-                <span><div class="t1">Fumaça — V4 anual</div><div class="t2">24/07/2026</div></span>
-                <span class="bd">2d</span>
-              </div>
-              <div class="evt" style="border-left-color:#E05252">
-                <span class="ic" style="background:#FDEEEE">🩺</span>
-                <span><div class="t1">Caramelo — Retorno</div><div class="t2">20/07/2026</div></span>
-                <span class="bd" style="background:rgba(224,82,82,.13);color:#E05252">atraso</span>
-              </div>
+            <div class="hero-slide">
+              <img class="hero-screen-img" src="screen3.jpg.jpeg" alt="VetFlowCare — agenda de julho 2026 com calendário e botão Rota do dia">
             </div>
-
-            <!-- FINANCEIRO -->
-            <div class="tabpane" id="pane-financeiro" role="tabpanel" aria-labelledby="tab-financeiro">
-              <div class="fin-tabs"><span>A Receber</span><span>Despesas</span><span class="on">Fluxo</span></div>
-              <div class="mini-lbl">RESUMO DO PERÍODO</div>
-              <div class="stat">
-                <div><div class="k">RECEBIDO</div><div class="v" style="color:#2DB37A">R$ 675</div></div>
-                <div><div class="k">A RECEBER</div><div class="v" style="color:#F0A500">R$ 75</div></div>
-                <div><div class="k">DESPESAS</div><div class="v" style="color:#E05252">R$ 250</div></div>
-              </div>
-              <div class="mini-card">
-                <div style="font-size:11px">Saldo do período: <b style="color:#2DB37A;font-family:Sora">R$ 425,00</b></div>
-                <div style="display:flex;gap:9px;margin-top:8px;padding-top:8px;border-top:1px solid #D5EBE9">
-                  <div style="flex:1;text-align:center"><div class="k" style="font-size:7px;font-weight:800;color:#6B7A8D">RECEBIMENTO</div><b style="font-size:13px;color:#2DB37A;font-family:Sora">90%</b></div>
-                  <div style="flex:1;text-align:center"><div class="k" style="font-size:7px;font-weight:800;color:#6B7A8D">TICKET MÉDIO</div><b style="font-size:13px;font-family:Sora">R$ 168</b></div>
-                  <div style="flex:1;text-align:center"><div class="k" style="font-size:7px;font-weight:800;color:#6B7A8D">ATENDIM.</div><b style="font-size:13px;font-family:Sora">5</b></div>
-                </div>
-              </div>
-              <div class="mini-lbl">🩺 PRODUÇÃO CLÍNICA</div>
-              <div class="mini-card" style="padding:11px 10px">
-                <div class="bar-row"><span class="bl">🔄 Retorno</span><span class="bar"><i style="width:100%;background:#2DC0AE"></i></span><span class="bv">2</span></div>
-                <div class="bar-row"><span class="bl">🏥 Cirurgia</span><span class="bar"><i style="width:50%;background:#2DC0AE"></i></span><span class="bv">1</span></div>
-                <div class="bar-row"><span class="bl">🩺 Consulta</span><span class="bar"><i style="width:50%;background:#2DC0AE"></i></span><span class="bv">1</span></div>
-                <div class="bar-row"><span class="bl">💉 Vacina</span><span class="bar"><i style="width:50%;background:#2DC0AE"></i></span><span class="bv">1</span></div>
-              </div>
+            <div class="hero-slide">
+              <img class="hero-screen-img" src="screen4.jpg.jpeg" alt="VetFlowCare — financeiro com R$ 3.000 recebidos em julho e controle de cobranças parceladas">
             </div>
-
-            <!-- AGENDA -->
-            <div class="tabpane" id="pane-agenda" role="tabpanel" aria-labelledby="tab-agenda">
-              <div class="mini-card">
-                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px">
-                  <span style="font-size:9px;color:#6B7A8D">‹</span>
-                  <b style="font-size:11px;font-family:Sora">Julho 2026</b>
-                  <span style="font-size:9px;color:#6B7A8D">›</span>
-                </div>
-                <div class="cal">
-                  <b>D</b><b>S</b><b>T</b><b>Q</b><b>Q</b><b>S</b><b>S</b>
-                  <span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span>
-                  <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
-                  <span>12</span><span>13</span><span>14</span><span class="hasev">15</span><span>16</span><span>17</span><span>18</span>
-                  <span>19</span><span class="hasev late">20</span><span>21</span><span class="tod">22</span><span>23</span><span class="hasev">24</span><span>25</span>
-                  <span>26</span><span>27</span><span>28</span><span>29</span><span class="hasev">30</span><span>31</span>
-                </div>
-              </div>
-              <div class="mini-lbl">DIA 24 DE JULHO</div>
-              <div class="evt">
-                <span class="ic" style="background:#EEF4FA">💉</span>
-                <span><div class="t1">Fumaça — V4 anual</div><div class="t2">09:30 · domicílio</div></span>
-              </div>
-              <div class="evt" style="border-left-color:#2DC0AE">
-                <span class="ic" style="background:#FDEEEE">🩺</span>
-                <span><div class="t1">Thor — Consulta</div><div class="t2">14:00 · clínica</div></span>
-              </div>
+            <div class="hero-slide">
+              <img class="hero-screen-img" src="screen5.jpg.jpeg" alt="VetFlowCare — novo atendimento com prontuário estruturado e botão Ditar por voz">
             </div>
-          </div>
-
-          <div class="app-nav" role="tablist" aria-label="Telas do aplicativo">
-            <button role="tab" id="tab-inicio" aria-selected="true" aria-controls="pane-inicio" data-pane="inicio"><span class="ni">🏠</span>Início</button>
-            <button role="tab" id="tab-financeiro" aria-selected="false" aria-controls="pane-financeiro" data-pane="financeiro"><span class="ni">💰</span>Financeiro</button>
-            <button role="tab" id="tab-agenda" aria-selected="false" aria-controls="pane-agenda" data-pane="agenda"><span class="ni">📅</span>Agenda</button>
           </div>
         </div>
       </div>
-      <p class="hint">👆 <span>Toque nas abas — é o app de verdade rodando aqui</span></p>
+      <div class="hero-dots" id="heroDots" aria-label="Navegar entre telas do app">
+        <button class="hero-dot active" data-idx="0" aria-label="Tela Início"></button>
+        <button class="hero-dot" data-idx="1" aria-label="Tela Pacientes"></button>
+        <button class="hero-dot" data-idx="2" aria-label="Tela Agenda"></button>
+        <button class="hero-dot" data-idx="3" aria-label="Tela Financeiro"></button>
+        <button class="hero-dot" data-idx="4" aria-label="Tela Atendimento"></button>
+      </div>
+      <p class="hint">📱 <span>Capturas reais — o que você vê é o que você instala</span></p>
     </div>
   </div>
 </header>
@@ -1099,6 +1039,16 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
         </div>
       </div>
 
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          O VetFlowCare é um produto brasileiro?
+          <span class="arr">+</span>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">Sim, 100%. O VetFlowCare é desenvolvido e mantido pela B&amp;G Systems, empresa brasileira. Todo o projeto — código, design e suporte — é feito no Brasil, por brasileiros, pensado para a realidade do veterinário nacional: CFMV, CRMV, LGPD, receituário de controle especial no formato exigido pelo MAPA, e a rotina de atendimentos em domicílio como é comum aqui no Brasil. Não tem qualquer relação com sistemas de gestão veterinária de outros países ou produtos de nomes parecidos.</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1174,15 +1124,24 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 </a>
 
 <script>
-// ---- Abas do celular ----
-document.querySelectorAll('.app-nav button').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.app-nav button').forEach(function(b){ b.setAttribute('aria-selected','false'); });
-    document.querySelectorAll('.tabpane').forEach(function(p){ p.classList.remove('on'); });
-    btn.setAttribute('aria-selected','true');
-    document.getElementById('pane-' + btn.dataset.pane).classList.add('on');
+// ---- Hero slideshow ----
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots   = document.querySelectorAll('.hero-dot');
+  if(!slides.length) return;
+  var cur = 0;
+  function go(n){
+    slides[cur].classList.remove('active');
+    dots[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    dots[cur].classList.add('active');
+  }
+  setInterval(function(){ go(cur + 1); }, 3600);
+  dots.forEach(function(d){
+    d.addEventListener('click', function(){ go(+d.dataset.idx); });
   });
-});
+})();
 
 // ---- Revelação ao rolar ----
 var io = new IntersectionObserver(function(entries){
