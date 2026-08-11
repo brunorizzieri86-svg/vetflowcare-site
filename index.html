@@ -102,7 +102,7 @@
         "name": "VetFlowCare"
       },
       "sameAs": [
-        "https://www.instagram.com/vetflowcare"
+        "https://www.instagram.com/vetflowcare.app"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -581,6 +581,52 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 .hero-dot{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.32);transition:background .3s,width .3s;cursor:pointer;border:none;padding:0;flex-shrink:0}
 .hero-dot.active{background:var(--teal);width:20px}
 
+/* ===== INSTAGRAM ===== */
+#instagram{
+  background:linear-gradient(145deg,#12294f 0%,#1b3460 50%,#0f2840 100%);
+  padding:80px 0;color:#fff;position:relative;overflow:hidden;
+}
+#instagram::before{
+  content:'';position:absolute;width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(225,48,108,.16),transparent 60%);
+  top:-260px;right:-140px;pointer-events:none;
+}
+.insta-shell{
+  display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center;
+  position:relative;z-index:2;
+}
+.insta-badge{
+  display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;
+  background:rgba(225,48,108,.14);border:1px solid rgba(225,48,108,.32);
+  border-radius:99px;padding:8px 18px;
+}
+.insta-badge svg{fill:#e1306c;flex-shrink:0}
+.insta-badge span{font-size:12.5px;font-weight:700;color:#f9bfcc;letter-spacing:.06em}
+.insta-h{font-family:Sora;font-size:clamp(24px,3vw,40px);font-weight:800;line-height:1.15;margin-bottom:16px}
+.insta-sub{font-size:16px;line-height:1.72;color:rgba(255,255,255,.72)}
+.insta-cta{
+  display:inline-flex;align-items:center;gap:10px;margin-top:28px;
+  background:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color:#fff;font-weight:700;font-size:15px;padding:14px 28px;border-radius:99px;
+  text-decoration:none;box-shadow:0 8px 28px rgba(220,39,67,.38);
+  transition:transform .18s,box-shadow .18s;
+}
+.insta-cta:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(220,39,67,.52)}
+.insta-cta svg{fill:#fff;flex-shrink:0}
+.insta-pilares{display:flex;flex-direction:column;gap:14px}
+.insta-pilar{
+  display:flex;align-items:center;gap:16px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:18px 20px;
+  transition:background .2s,border-color .2s;
+}
+.insta-pilar:hover{background:rgba(255,255,255,.1);border-color:rgba(225,48,108,.3)}
+.ip-ico{font-size:26px;flex-shrink:0;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center}
+.insta-pilar b{display:block;font-size:14px;font-weight:700;color:#fff;margin-bottom:3px}
+.insta-pilar span{font-size:13px;color:rgba(255,255,255,.62);line-height:1.4}
+.insta-more{margin-top:12px;text-align:center;font-size:12px;color:rgba(255,255,255,.38);display:block}
+@media(max-width:1000px){.insta-shell{grid-template-columns:1fr;gap:44px}}
+@media(max-width:620px){.insta-posts{gap:8px}}
 </style>
 </head>
 <body>
@@ -970,7 +1016,43 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   </div>
 </section>
 
-<!-- ===== NOVA SEÇÃO: FAQ ===== -->
+<!-- ===== INSTAGRAM ===== -->
+<section id="instagram">
+  <div class="shell insta-shell">
+    <div>
+      <div class="insta-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        <span>INSTAGRAM · @vetflowcare.app</span>
+      </div>
+      <h2 class="insta-h">Cada semana tem<br>novidade. Não perde.</h2>
+      <p class="insta-sub">Dicas clínicas, rotina real de veterinários autônomos e bastidores do VetFlowCare — postado toda semana pela Dra. Gabriela.</p>
+      <a class="insta-cta" href="https://www.instagram.com/vetflowcare.app" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Seguir @vetflowcare.app
+      </a>
+    </div>
+
+    <div class="insta-pilares" aria-hidden="true">
+      <div class="insta-pilar">
+        <div class="ip-ico">🗺️</div>
+        <b>Rotina de campo</b>
+        <span>Dicas para quem atende fora da clínica</span>
+      </div>
+      <div class="insta-pilar">
+        <div class="ip-ico">💉</div>
+        <b>Clínica veterinária</b>
+        <span>Protocolos, vacinas e casos do dia a dia</span>
+      </div>
+      <div class="insta-pilar">
+        <div class="ip-ico">📱</div>
+        <b>Novidades do app</b>
+        <span>Cada atualização mostrada ao vivo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
 <section id="faq">
   <div class="shell">
     <div class="reveal">
@@ -1089,7 +1171,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
           <a class="social-btn" href="https://wa.me/5511912659906" target="_blank" rel="noopener" aria-label="WhatsApp">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
           </a>
-          <a class="social-btn" href="https://instagram.com/vetflowcare" target="_blank" rel="noopener" aria-label="Instagram">
+          <a class="social-btn" href="https://www.instagram.com/vetflowcare.app" target="_blank" rel="noopener" aria-label="Instagram @vetflowcare.app">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
         </div>
