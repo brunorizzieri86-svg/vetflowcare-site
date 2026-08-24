@@ -676,6 +676,9 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 .plan-btn{display:block;text-align:center;padding:15px;border-radius:13px;font-weight:800;font-size:15px;text-decoration:none;transition:.2s}
 .plan-btn.teal-btn{background:var(--teal);color:#fff;box-shadow:0 6px 18px rgba(45,192,174,.4)}
 .plan-btn.teal-btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.final-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
+.zap.teal-cta{background:var(--teal)!important;color:#fff!important}
+.zap.teal-cta svg{fill:#fff}
 .plan-btn.zap-btn{background:#25D366;color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.42)}
 .plan-btn.zap-btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
 .plan-note{font-size:12px;color:var(--teal-soft);text-align:center;margin-top:12px}
@@ -742,7 +745,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
       <p class="lead"><strong>VetFlowCare</strong> reúne pacientes, vacinas, prontuário, receituário timbrado e financeiro em um só app.
         Funciona sem internet e guarda tudo no seu próprio aparelho — pensado para quem atende em domicílio, em clínica ou nos dois.</p>
       <div class="ctas">
-        <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20conhecer%20o%20VetFlowCare." target="_blank" rel="noopener">
+        <a class="zap" href="https://www.vetflowcare.com.br/app">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
           Testar grátis por 30 dias
         </a>
@@ -1249,7 +1252,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
           <li><span class="tick">✓</span> Sem precisar de cartão</li>
           <li><span class="tick">✓</span> Sem compromisso</li>
         </ul>
-        <a class="plan-btn teal-btn" href="https://vetflowcare.com.br">Quero testar grátis</a>
+        <a class="plan-btn teal-btn" href="https://www.vetflowcare.com.br/app">Quero testar grátis</a>
       </div>
 
       <!-- PRO -->
@@ -1298,10 +1301,16 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
         <div class="step"><b>DEPOIS</b><span>Cadastre-se e comece o teste grátis de 30 dias, com tudo liberado.</span></div>
         <div class="step"><b>ENTÃO</b><span>Gostou? Assine o Plano Pro e continue com tudo funcionando.</span></div>
       </div>
-      <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20conhecer%20o%20VetFlowCare." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
-        Falar com a equipe
-      </a>
+      <div class="final-ctas">
+        <a class="zap teal-cta" href="https://www.vetflowcare.com.br/app">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 011 1v11.59l3.3-3.3a1 1 0 011.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 011.4-1.42l3.3 3.3V3a1 1 0 011-1zM5 20a1 1 0 100 2h14a1 1 0 100-2H5z"/></svg>
+          Testar grátis agora
+        </a>
+        <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20conhecer%20o%20VetFlowCare." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
+          Falar com a equipe
+        </a>
+      </div>
       <div class="beta-note">Teste grátis de 30 dias · Suporte direto pelo WhatsApp</div>
     </div>
   </div>
