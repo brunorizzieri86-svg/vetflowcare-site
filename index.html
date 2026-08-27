@@ -5,7 +5,7 @@
 <meta name="google-site-verification" content="b4045437660ab064" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VetFlowCare — a clínica inteira no seu bolso</title>
-<meta name="description" content="VetFlowCare é o app de gestão para clínicas e veterinários autônomos da B&G Systems: pacientes, vacinas, prontuário, receituário timbrado e controle financeiro num só lugar. Funciona offline, dados no seu aparelho. Teste grátis por 30 dias.">
+<meta name="description" content="VetFlowCare é o app de gestão para clínicas e veterinários autônomos da B&G Systems: pacientes, vacinas, prontuário, receituário timbrado e controle financeiro num só lugar. Funciona offline, dados no seu aparelho. Em fase beta — vagas abertas.">
 <meta name="application-name" content="VetFlowCare">
 <meta name="author" content="B&G Systems">
 <link rel="canonical" href="https://www.vetflowcare.com.br">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.vetflowcare.com.br/">
 <meta property="og:title" content="VetFlowCare — a clínica inteira no seu bolso">
-<meta property="og:description" content="Pacientes, vacinas, prontuário, receituário timbrado e financeiro. Funciona offline. Teste grátis por 30 dias.">
+<meta property="og:description" content="Pacientes, vacinas, prontuário, receituário timbrado e financeiro. Funciona offline. Em fase beta com vagas para testadores.">
 <meta property="og:image" content="https://www.vetflowcare.com.br/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="VetFlowCare — a clínica inteira no seu bolso">
-<meta name="twitter:description" content="Pacientes, vacinas, prontuário e financeiro. Funciona offline. Teste grátis por 30 dias.">
+<meta name="twitter:description" content="Pacientes, vacinas, prontuário e financeiro. Funciona offline. Fase beta aberta a veterinários.">
 <meta name="twitter:image" content="https://www.vetflowcare.com.br/og.jpg">
 
 <script type="application/ld+json">
@@ -47,7 +47,7 @@
         "price": "0",
         "priceCurrency": "BRL",
         "availability": "https://schema.org/InStock",
-        "description": "Teste grátis de 30 dias. Depois, Plano Pro por R$ 90/mês."
+        "description": "Acesso gratuito durante a fase beta"
       },
       "author": {
         "@type": "Organization",
@@ -85,7 +85,7 @@
         "Instala como PWA na tela inicial do celular"
       ],
       "screenshot": "https://www.vetflowcare.com.br/og.jpg",
-      "softwareVersion": "9.30"
+      "softwareVersion": "beta"
     },
     {
       "@type": "Organization",
@@ -657,39 +657,6 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 
 /* ===== BARRA DE LEITURA ===== */
 .read-progress{position:absolute;bottom:-1px;left:0;height:2px;background:#2DC0AE;width:0%;pointer-events:none;z-index:2;border-radius:0 2px 2px 0;transition:width .12s linear}
-
-/* ═══ SEÇÃO PLANOS ═══ */
-#planos{padding:72px 0;background:linear-gradient(180deg,#fff 0%,var(--paper) 100%)}
-.plans-grid{display:flex;gap:26px;justify-content:center;align-items:stretch;flex-wrap:wrap;max-width:760px;margin:0 auto}
-.plan{flex:1;min-width:270px;max-width:350px;background:#fff;border:2px solid #e6eeec;border-radius:22px;padding:34px 30px;box-shadow:0 6px 26px rgba(18,41,79,.07);display:flex;flex-direction:column}
-.plan.featured{background:linear-gradient(165deg,var(--navy) 0%,var(--navy-2) 100%);border:none;box-shadow:0 16px 40px rgba(18,41,79,.28);position:relative;transform:scale(1.04)}
-.plan-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;padding:6px 18px;border-radius:30px;text-transform:uppercase;white-space:nowrap}
-.plan-name{font-size:15px;font-weight:800;color:var(--navy)}
-.plan-price{margin:14px 0 18px;display:flex;align-items:baseline;gap:6px}
-.plan-price .amt{font-size:42px;font-weight:900;color:var(--navy);letter-spacing:-1px}
-.plan-price .per{font-size:15px;color:var(--muted)}
-.plan-price .old-price{font-size:18px;font-weight:700;color:rgba(255,255,255,.5);text-decoration:line-through;margin-right:2px}
-.promo-tag{display:inline-block;background:rgba(240,165,0,.16);border:1px solid rgba(240,165,0,.5);color:var(--gold,#F0A500);font-size:12px;font-weight:800;padding:5px 12px;border-radius:20px;margin:-8px 0 18px}
-.plan .check-list{margin:0 0 24px;flex:1}
-.plan .check-list.light li{color:#dce8f0}
-.plan .check-list.light .tick{color:var(--teal-soft)}
-.plan-btn{display:block;text-align:center;padding:15px;border-radius:13px;font-weight:800;font-size:15px;text-decoration:none;transition:.2s}
-.plan-btn.teal-btn{background:var(--teal);color:#fff;box-shadow:0 6px 18px rgba(45,192,174,.4)}
-.plan-btn.teal-btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
-.final-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
-.zap.teal-cta{background:var(--teal)!important;color:#fff!important}
-.zap.teal-cta svg{fill:#fff}
-.plan-btn.zap-btn{background:#25D366;color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.42)}
-.plan-btn.zap-btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
-.plan-note{font-size:12px;color:var(--teal-soft);text-align:center;margin-top:12px}
-.how-pro{margin:52px auto 0;max-width:720px;background:#fff;border:1.5px solid #e6eeec;border-radius:18px;padding:30px 28px;box-shadow:0 6px 26px rgba(18,41,79,.06)}
-.how-title{font-size:17px;font-weight:800;color:var(--navy);text-align:center;margin-bottom:22px}
-.how-steps{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
-.how-step{flex:1;min-width:180px;text-align:center}
-.how-step p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
-.how-num{width:46px;height:46px;border-radius:50%;background:#e6f4f2;color:var(--teal);font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
-@media(max-width:640px){.plan.featured{transform:none}.plans-grid{gap:34px}}
-
 </style>
 </head>
 <body>
@@ -701,7 +668,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   <a href="#documentos" onclick="closeMob()">Documentos</a>
   <a href="#seguranca" onclick="closeMob()">Segurança</a>
   <a href="#faq" onclick="closeMob()">Dúvidas</a>
-  <a href="#beta" onclick="closeMob()">Começar</a>
+  <a href="#beta" onclick="closeMob()">Fase beta</a>
   <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Vi%20o%20site%20do%20VetFlowCare%20e%20quero%20saber%20mais." target="_blank" rel="noopener" onclick="closeMob()">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
     Falar no WhatsApp
@@ -724,8 +691,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
       <a href="#documentos">Documentos</a>
       <a href="#seguranca">Segurança</a>
       <a href="#faq">Dúvidas</a>
-      <a href="#planos">Planos</a>
-      <a href="#beta">Começar</a>
+      <a href="#beta">Fase beta</a>
     </div>
     <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Vi%20o%20site%20do%20VetFlowCare%20e%20quero%20saber%20mais." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
@@ -740,16 +706,16 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 <header class="hero" id="topo">
   <div class="shell">
     <div>
-      <span class="eyebrow"><span class="dot"></span> Feito por quem entende a rotina veterinária</span>
+      <span class="eyebrow"><span class="dot"></span> Fase beta · vagas abertas para veterinários</span>
       <h1>A clínica inteira cabe no <em id="twWord">seu bolso</em><span class="tw-cursor" aria-hidden="true"></span>.</h1>
       <p class="lead"><strong>VetFlowCare</strong> reúne pacientes, vacinas, prontuário, receituário timbrado e financeiro em um só app.
         Funciona sem internet e guarda tudo no seu próprio aparelho — pensado para quem atende em domicílio, em clínica ou nos dois.</p>
       <div class="ctas">
-        <a class="zap" href="https://www.vetflowcare.com.br/app">
+        <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20testar%20o%20VetFlowCare%20na%20fase%20beta." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
-          Testar grátis por 30 dias
+          Acesso gratuito por 30 dias
         </a>
-        <a class="ghost" href="#planos">Ver planos ↓</a>
+        <a class="ghost" href="#telas">Ver telas reais ↓</a>
       </div>
       <div class="slogan">ORGANIZA · CONECTA · CUIDA</div>
     </div>
@@ -838,7 +804,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
     <div class="reveal">
       <span class="sec-tag">O app por dentro</span>
       <h2 class="sec-h">Não é protótipo. É o app de verdade.</h2>
-      <p class="sec-p">Cada tela abaixo é captura real do VetFlowCare, rodando de verdade no dia a dia dos atendimentos. O que você vê é o que você instala.</p>
+      <p class="sec-p">Cada tela abaixo é captura real do VetFlowCare, rodando hoje na fase beta. O que você vê é o que você instala.</p>
     </div>
     <p class="scroll-hint" style="margin-top:40px;font-size:13px;color:var(--muted)">← arraste para ver mais telas →</p>
     <div class="screens-row" role="list">
@@ -1066,7 +1032,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
           </div>
           <div class="comp-row">
             <div class="comp-icon">✅</div>
-            <div class="comp-text"><b>Teste grátis por 30 dias</b><span>App completo, sem precisar de cartão</span></div>
+            <div class="comp-text"><b>Gratuito no beta</b><span>Use completo, sem cartão de crédito</span></div>
           </div>
           <div class="comp-row">
             <div class="comp-icon">✅</div>
@@ -1189,11 +1155,11 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Quanto custa o VetFlowCare?
+          Quanto vai custar depois do beta?
           <span class="arr">+</span>
         </button>
         <div class="faq-a" role="region">
-          <div class="faq-a-inner">Você começa com <b>30 dias grátis</b>, com todas as funções liberadas e sem precisar de cartão. Depois, o Plano Pro custa <b>R$ 90/mês</b> (valor promocional de lançamento), com pagamento via PIX pelo WhatsApp. Você pode cancelar quando quiser — seus dados nunca são apagados.</div>
+          <div class="faq-a-inner">Ainda estamos definindo a precificação. O que já é certo: quem entrar no beta terá condições especiais permanentes — é a forma de reconhecer quem ajudou a moldar o produto. Use agora, sem custo, e participe dessa decisão junto conosco.</div>
         </div>
       </div>
 
@@ -1209,11 +1175,11 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Como começo a usar?
+          Como entro na fase beta?
           <span class="arr">+</span>
         </button>
         <div class="faq-a" role="region">
-          <div class="faq-a-inner">É rápido: instale o app no seu celular (direto pelo navegador, sem loja), faça seu cadastro e o teste grátis de 30 dias começa na hora, com tudo liberado. Se ficar com qualquer dúvida, clique no botão verde do WhatsApp e nossa equipe te ajuda na hora.</div>
+          <div class="faq-a-inner">Só pelo WhatsApp, por enquanto. Clique no botão verde em qualquer parte do site, nos conte como é sua rotina de atendimento hoje, e nossa equipe entra em contato para enviar o acesso. O processo todo leva menos de 24 horas.</div>
         </div>
       </div>
 
@@ -1231,87 +1197,22 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   </div>
 </section>
 
-<!-- ═══ SEÇÃO PLANOS (B&G Systems) ═══ -->
-<section id="planos">
-  <div class="shell">
-    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 44px">
-      <span class="sec-tag">Planos</span>
-      <h2 class="sec-h">Toda a sua rotina veterinária em um só lugar.</h2>
-      <p class="sec-p">Comece com 30 dias grátis, sem cartão e sem compromisso, e descubra na prática como o VetFlowCare organiza seus atendimentos. Depois, o Plano Pro mantém tudo funcionando — e a cada atualização nova, seu aplicativo atualiza automaticamente.</p>
-    </div>
-
-    <div class="plans-grid reveal">
-      <!-- GRÁTIS -->
-      <div class="plan">
-        <div class="plan-name">Teste grátis</div>
-        <div class="plan-price"><span class="amt">R$ 0</span><span class="per">/ 30 dias</span></div>
-        <ul class="check-list">
-          <li><span class="tick">✓</span> Todas as funções liberadas</li>
-          <li><span class="tick">✓</span> Pacientes e tutores <b>ilimitados</b></li>
-          <li><span class="tick">✓</span> Receituários e documentos timbrados</li>
-          <li><span class="tick">✓</span> Sem precisar de cartão</li>
-          <li><span class="tick">✓</span> Sem compromisso</li>
-        </ul>
-        <a class="plan-btn teal-btn" href="https://www.vetflowcare.com.br/app">Quero testar grátis</a>
-      </div>
-
-      <!-- PRO -->
-      <div class="plan featured">
-        <div class="plan-badge">🚀 Preço de lançamento</div>
-        <div class="plan-name" style="color:var(--teal)">Plano Pro</div>
-        <div class="plan-price">
-          <span class="old-price">R$ 120</span>
-          <span class="amt" style="color:#fff">R$ 90</span><span class="per" style="color:var(--teal-soft)">/ mês</span>
-        </div>
-        <div class="promo-tag">Valor promocional por tempo limitado</div>
-        <ul class="check-list light">
-          <li><span class="tick">✓</span> Pacientes e tutores <b>ilimitados</b></li>
-          <li><span class="tick">✓</span> Receituários, termos e carteirinha de vacinação</li>
-          <li><span class="tick">✓</span> Controle financeiro completo (fluxo de caixa e despesas)</li>
-          <li><span class="tick">✓</span> Rota de visitas otimizada no mapa</li>
-          <li><span class="tick">✓</span> Backup e exportação dos seus dados</li>
-          <li><span class="tick">✓</span> Atualizações automáticas incluídas, sem custo extra</li>
-          <li><span class="tick">✓</span> Suporte direto com quem desenvolve</li>
-        </ul>
-        <a class="plan-btn zap-btn" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Pro%20do%20VetFlowCare%20%F0%9F%90%BE" target="_blank" rel="noopener">💬 Assinar pelo WhatsApp</a>
-        <div class="plan-note">Pagamento via PIX · Ativação na hora · Cancele quando quiser</div>
-      </div>
-    </div>
-
-    <!-- COMO ASSINAR -->
-    <div class="how-pro reveal">
-      <div class="how-title">Como assinar o Pro</div>
-      <div class="how-steps">
-        <div class="how-step"><div class="how-num">1</div><p>Toque em <b>Assinar pelo WhatsApp</b> e fale com a nossa equipe</p></div>
-        <div class="how-step"><div class="how-num">2</div><p>Pague via <b>PIX</b> e receba seu <b>código de ativação</b></p></div>
-        <div class="how-step"><div class="how-num">3</div><p>Digite o código no app em <b>Ajustes</b> e pronto! 🎉</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="beta">
   <div class="shell">
     <div class="beta-box reveal">
-      <span class="eyebrow"><span class="dot"></span> Comece hoje mesmo</span>
-      <h2>Sua rotina veterinária mais leve começa agora.</h2>
-      <p>Menos papelada, menos caderno, menos tempo perdido. O VetFlowCare organiza pacientes, vacinas, documentos e financeiro para você focar no que importa: cuidar dos animais. Teste grátis por 30 dias — sem cartão, sem compromisso.</p>
+      <span class="eyebrow"><span class="dot"></span> Fase beta · acesso por convite</span>
+      <h2>Procuramos veterinários para testar antes de todo mundo.</h2>
+      <p>O VetFlowCare está em testes fechados. Quem entra agora usa o app completo, fala direto com quem desenvolve e vê o próprio pedido virar função na atualização seguinte — foi assim com cada versão até aqui.</p>
       <div class="steps">
-        <div class="step"><b>PRIMEIRO</b><span>Instale o app no seu celular em menos de um minuto.</span></div>
-        <div class="step"><b>DEPOIS</b><span>Cadastre-se e comece o teste grátis de 30 dias, com tudo liberado.</span></div>
-        <div class="step"><b>ENTÃO</b><span>Gostou? Assine o Plano Pro e continue com tudo funcionando.</span></div>
+        <div class="step"><b>PRIMEIRO</b><span>Você chama no WhatsApp e conta como é seu atendimento hoje.</span></div>
+        <div class="step"><b>DEPOIS</b><span>Recebe o convite de acesso e instala o app no celular em um minuto.</span></div>
+        <div class="step"><b>ENTÃO</b><span>Usa no dia a dia e manda o que incomodou. A gente ajusta e te avisa.</span></div>
       </div>
-      <div class="final-ctas">
-        <a class="zap teal-cta" href="https://www.vetflowcare.com.br/app">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 011 1v11.59l3.3-3.3a1 1 0 011.4 1.42l-5 5a1 1 0 01-1.4 0l-5-5a1 1 0 011.4-1.42l3.3 3.3V3a1 1 0 011-1zM5 20a1 1 0 100 2h14a1 1 0 100-2H5z"/></svg>
-          Testar grátis agora
-        </a>
-        <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20conhecer%20o%20VetFlowCare." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
-          Falar com a equipe
-        </a>
-      </div>
-      <div class="beta-note">Teste grátis de 30 dias · Suporte direto pelo WhatsApp</div>
+      <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Sou%20veterin%C3%A1rio(a)%20e%20quero%20participar%20da%20fase%20beta%20do%20VetFlowCare." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
+        Acesso gratuito por 30 dias
+      </a>
+      <div class="beta-note">Sem custo durante o beta · Resposta pelo WhatsApp da equipe</div>
     </div>
   </div>
 </section>
@@ -1347,7 +1248,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
         </div>
         <div class="col">
           <b>Participar</b>
-          <a href="#beta">Começar</a>
+          <a href="#beta">Fase beta</a>
           <a href="#faq">Dúvidas</a>
           <a href="#comparativo">Por que o VetFlowCare</a>
           <a href="https://wa.me/5511912659906" target="_blank" rel="noopener">WhatsApp</a>
