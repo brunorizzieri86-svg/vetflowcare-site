@@ -707,7 +707,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   <div class="shell">
     <div>
       <span class="eyebrow"><span class="dot"></span> Fase beta · vagas abertas para veterinários</span>
-      <h1>A clínica inteira cabe no <em id="twWord">seu bolso</em><span class="tw-cursor" aria-hidden="true"></span>.</h1>
+      <h1>A clínica inteira cabe <span id="twPrep">no</span> <em id="twWord">seu bolso</em><span class="tw-cursor" aria-hidden="true"></span>.</h1>
       <p class="lead"><strong>VetFlowCare</strong> reúne pacientes, vacinas, prontuário, receituário timbrado e financeiro em um só app.
         Funciona sem internet e guarda tudo no seu próprio aparelho — pensado para quem atende em domicílio, em clínica ou nos dois.</p>
       <div class="ctas">
@@ -1289,17 +1289,25 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 
 // ---- Typewriter ----
 (function(){
-  var phrases=['seu bolso','sua clínica','sua agenda','seu financeiro','sua rota'];
+  var phrases=[
+    {w:'seu bolso',      p:'no'},
+    {w:'sua clínica',    p:'na'},
+    {w:'sua agenda',     p:'na'},
+    {w:'seu financeiro', p:'no'},
+    {w:'sua rota',       p:'na'},
+  ];
   var el=document.getElementById('twWord');
-  if(!el) return;
-  var pi=0,ci=phrases[0].length,typing=false;
+  var prep=document.getElementById('twPrep');
+  if(!el||!prep) return;
+  var pi=0,ci=phrases[0].w.length,typing=false;
   function tick(){
-    var target=phrases[pi];
+    var cur=phrases[pi];
     if(typing){
-      if(ci<=target.length){el.textContent=target.slice(0,ci);ci++;setTimeout(tick,ci===1?280:68);}
+      if(ci===0) prep.textContent=cur.p;
+      if(ci<=cur.w.length){el.textContent=cur.w.slice(0,ci);ci++;setTimeout(tick,ci===1?280:68);}
       else{typing=false;setTimeout(tick,2600);}
     } else {
-      if(ci>0){ci--;el.textContent=target.slice(0,ci);setTimeout(tick,42);}
+      if(ci>0){ci--;el.textContent=cur.w.slice(0,ci);setTimeout(tick,42);}
       else{pi=(pi+1)%phrases.length;typing=true;setTimeout(tick,200);}
     }
   }
