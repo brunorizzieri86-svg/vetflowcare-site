@@ -657,6 +657,59 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 
 /* ===== BARRA DE LEITURA ===== */
 .read-progress{position:absolute;bottom:-1px;left:0;height:2px;background:#2DC0AE;width:0%;pointer-events:none;z-index:2;border-radius:0 2px 2px 0;transition:width .12s linear}
+/* ===== PLANOS ===== */
+#planos{
+  padding:88px 0;
+  background:linear-gradient(180deg,#fff 0%,var(--paper) 60%,#fff 100%);
+  position:relative;overflow:hidden;
+}
+#planos::before{
+  content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);
+  width:900px;height:500px;
+  background:radial-gradient(ellipse at center,rgba(45,192,174,.09),transparent 68%);
+  pointer-events:none;
+}
+#planos::after{
+  content:'';position:absolute;bottom:-60px;right:-100px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(18,41,79,.04),transparent 65%);
+  pointer-events:none;
+}
+#planos .sec-h{text-shadow:0 2px 28px rgba(18,41,79,.13)}
+#planos .sec-tag{text-shadow:0 0 18px rgba(45,192,174,.4)}
+.plans-grid{display:flex;gap:26px;justify-content:center;align-items:stretch;flex-wrap:wrap;max-width:780px;margin:0 auto}
+.plan{flex:1;min-width:280px;max-width:360px;background:#fff;border:2px solid var(--line);border-radius:22px;padding:34px 30px;box-shadow:0 6px 26px rgba(18,41,79,.07);display:flex;flex-direction:column;position:relative}
+.plan.featured{background:linear-gradient(165deg,var(--navy) 0%,var(--navy-2) 100%);border:none;box-shadow:0 16px 40px rgba(18,41,79,.28);transform:scale(1.04)}
+.plan-badge{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;padding:6px 18px;border-radius:30px;white-space:nowrap}
+.plan-badge.promo{background:var(--warn)}
+.plan-name{font-size:15px;font-weight:800;color:var(--navy)}
+.plan.featured .plan-name{color:var(--teal)}
+.plan-price{margin:14px 0 6px;display:flex;align-items:baseline;gap:6px}
+.plan-price .orig{font-size:17px;color:var(--muted);text-decoration:line-through;margin-right:2px}
+.plan-price .amt{font-size:40px;font-weight:900;color:var(--navy);letter-spacing:-1px}
+.plan.featured .plan-price .amt{color:#fff}
+.plan-price .per{font-size:14px;color:var(--muted)}
+.plan.featured .plan-price .per{color:var(--teal-soft)}
+.plan-promo-note{font-size:11.5px;font-weight:700;color:var(--warn);letter-spacing:.04em;margin-bottom:18px}
+.plan .check-list{margin:0 0 24px;flex:1}
+.plan .check-list.light li{color:#d0e4ec}
+.plan .check-list.light .tick{color:var(--teal-soft)}
+.plan-cta{display:block;text-align:center;padding:14px;border-radius:13px;font-weight:800;font-size:15px;text-decoration:none;transition:transform .18s,box-shadow .18s}
+.plan-cta.outline{background:var(--paper);color:var(--navy);border:1.5px solid var(--line)}
+.plan-cta.outline:hover{background:#e6f4f2}
+.plan-cta.wapp{background:#25D366;color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.4)}
+.plan-cta.wapp:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(37,211,102,.52)}
+.plan-note{font-size:12px;color:var(--teal-soft);text-align:center;margin-top:12px;opacity:.8}
+.plan.plan-trial{background:#fff;border:2px solid var(--line)}
+.trial-step{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--ink);line-height:1.55}
+.trial-num{width:30px;height:30px;border-radius:50%;background:#e6f4f2;color:var(--teal);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.how-pro{margin:52px auto 0;max-width:720px;background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:32px 28px;box-shadow:0 6px 26px rgba(18,41,79,.06)}
+.how-title{font-size:17px;font-weight:800;color:var(--navy);text-align:center;margin-bottom:24px}
+.how-steps{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.how-step{flex:1;min-width:180px;text-align:center}
+.how-step p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
+.how-num{width:46px;height:46px;border-radius:50%;background:#e6f4f2;color:var(--teal);font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+@media(max-width:720px){.plan.featured{transform:none}.plans-grid{flex-direction:column;align-items:center}.plan{max-width:100%}}
 </style>
 </head>
 <body>
@@ -668,7 +721,8 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   <a href="#documentos" onclick="closeMob()">Documentos</a>
   <a href="#seguranca" onclick="closeMob()">Segurança</a>
   <a href="#faq" onclick="closeMob()">Dúvidas</a>
-  <a href="#beta" onclick="closeMob()">Começar</a>
+  <a href="#planos" onclick="closeMob()">Planos</a>
+  <a href="#planos" onclick="closeMob()">Começar</a>
   <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Vi%20o%20site%20do%20VetFlowCare%20e%20quero%20saber%20mais." target="_blank" rel="noopener" onclick="closeMob()">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
     Falar no WhatsApp
@@ -691,7 +745,7 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
       <a href="#documentos">Documentos</a>
       <a href="#seguranca">Segurança</a>
       <a href="#faq">Dúvidas</a>
-      <a href="#beta">Começar</a>
+      <a href="#planos">Começar</a>
     </div>
     <a class="zap" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Vi%20o%20site%20do%20VetFlowCare%20e%20quero%20saber%20mais." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
@@ -1197,25 +1251,88 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
   </div>
 </section>
 
-<section id="beta">
+<!-- ===== PLANOS ===== -->
+<section id="planos">
   <div class="shell">
-    <div class="beta-box reveal">
-      <span class="eyebrow"><span class="dot"></span> App completo · 30 dias grátis · Sem cartão</span>
-      <h2>Experimente completo por 30 dias. Sem compromisso.</h2>
-      <p>Todas as funções liberadas desde o primeiro acesso — pacientes, vacinas, receituário timbrado, financeiro e rota do dia. Sem limitações, sem cartão de crédito, sem burocracia.</p>
-      <div class="steps">
-        <div class="step"><b>PRIMEIRO</b><span>Acesse o app e crie sua conta em menos de 2 minutos.</span></div>
-        <div class="step"><b>DEPOIS</b><span>Use completo por 30 dias. Tudo liberado, sem restrição nenhuma.</span></div>
-        <div class="step"><b>ENTÃO</b><span>Gostou? Assine o Pro e continue. Não gostou? Cancele sem burocracia.</span></div>
+    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 48px">
+      <span class="sec-tag">Planos</span>
+      <h2 class="sec-h">30 dias pra descobrir que você não quer parar.</h2>
+      <p class="sec-p">Experimente tudo, sem limitação e sem cartão. Se gostar — e a gente sabe que vai — assine o Pro e mantenha sua clínica organizada pelo menor preço já praticado.</p>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- TRIAL — card branco com os passos -->
+      <div class="plan plan-trial reveal">
+        <span class="eyebrow" style="margin-bottom:18px;display:inline-flex;align-items:center;gap:8px;font-size:11.5px;background:rgba(45,192,174,.12);border:1px solid rgba(45,192,174,.35);color:#2DC0AE;padding:6px 14px;border-radius:99px;font-weight:700;letter-spacing:.06em"><span style="width:7px;height:7px;border-radius:50%;background:#2DC0AE;display:inline-block"></span> 30 dias grátis · Sem cartão</span>
+        <h3 style="font-family:Sora;font-size:22px;font-weight:800;color:#12294f;line-height:1.2;margin-bottom:10px">Experimente completo por 30 dias.</h3>
+        <p style="font-size:14px;color:#5f7285;margin-bottom:22px;line-height:1.6">Sem compromisso, sem cartão de crédito, sem burocracia.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;flex:1">
+          <div class="trial-step">
+            <div class="trial-num">1</div>
+            <div><b>Acesse o app</b> e crie sua conta em menos de 2 minutos.</div>
+          </div>
+          <div class="trial-step">
+            <div class="trial-num">2</div>
+            <div>Use <b>completo por 30 dias</b>. Tudo liberado, sem restrição nenhuma.</div>
+          </div>
+          <div class="trial-step">
+            <div class="trial-num">3</div>
+            <div>Gostou? Assine o Pro. Não gostou? <b>Cancele sem burocracia.</b></div>
+          </div>
+        </div>
+        <a class="plan-cta outline" style="margin-top:24px" href="https://app.vetflowcare.com.br" target="_blank" rel="noopener">
+          Acesso gratuito por 30 dias →
+        </a>
       </div>
-      <a class="zap" href="https://app.vetflowcare.com.br" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        Acesso gratuito por 30 dias
-      </a>
-      <div class="beta-note">Sem cartão de crédito · Acesso imediato · Cancela quando quiser</div>
+
+      <!-- PRO -->
+      <div class="plan featured reveal">
+        <div class="plan-badge promo">🔥 Preço de lançamento</div>
+        <div class="plan-name">Plano Pro</div>
+        <div class="plan-price">
+          <span class="orig">R$&nbsp;120</span>
+          <span class="amt">R$&nbsp;90</span>
+          <span class="per">/ mês</span>
+        </div>
+        <div class="plan-promo-note">⏳ Preço promocional por tempo limitado</div>
+        <ul class="check-list light" style="margin-bottom:24px">
+          <li><span class="tick">✓</span> Tudo do gratuito, <b>sem prazo</b></li>
+          <li><span class="tick">✓</span> Carteirinha de vacinação em PDF</li>
+          <li><span class="tick">✓</span> Financeiro: fluxo, despesas e relatórios</li>
+          <li><span class="tick">✓</span> Backup e exportação completa dos dados</li>
+          <li><span class="tick">✓</span> Rota do dia com Maps e Waze</li>
+          <li><span class="tick">✓</span> Todas as atualizações — automáticas</li>
+        </ul>
+        <a class="plan-cta wapp" href="https://wa.me/5511912659906?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Pro%20do%20VetFlowCare%20%F0%9F%90%BE" target="_blank" rel="noopener">
+          💬 Assinar pelo WhatsApp
+        </a>
+        <div class="plan-note">Pagamento via PIX · Ativação imediata</div>
+      </div>
+
+    </div>
+
+    <!-- COMO ASSINAR -->
+    <div class="how-pro reveal">
+      <div class="how-title">Como assinar o Pro</div>
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="how-num">1</div>
+          <p>Toque em <b>Assinar pelo WhatsApp</b> e fale com nossa equipe</p>
+        </div>
+        <div class="how-step">
+          <div class="how-num">2</div>
+          <p>Pague via <b>PIX</b> e receba seu <b>código de ativação</b> na hora</p>
+        </div>
+        <div class="how-step">
+          <div class="how-num">3</div>
+          <p>Digite o código em <b>Ajustes</b> no app — acesso Pro imediato 🎉</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <footer>
   <div class="shell">
@@ -1248,7 +1365,9 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
         </div>
         <div class="col">
           <b>Participar</b>
-          <a href="#beta">Começar</a>
+      <a href="#planos">Planos</a>
+          <a href="#planos">Planos</a>
+          <a href="#planos">Começar</a>
           <a href="#faq">Dúvidas</a>
           <a href="#comparativo">Por que o VetFlowCare</a>
           <a href="https://wa.me/5511912659906" target="_blank" rel="noopener">WhatsApp</a>
