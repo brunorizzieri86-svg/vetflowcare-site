@@ -710,37 +710,6 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
 .how-step p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
 .how-num{width:46px;height:46px;border-radius:50%;background:#e6f4f2;color:var(--teal);font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
 @media(max-width:720px){.plan.featured{transform:none}.plans-grid{flex-direction:column;align-items:center}.plan{max-width:100%}}
-
-
-/* ===== ÚNICA ALTERAÇÃO VISUAL: CÃO + GATO NO HERO ===== */
-.stage{position:relative;isolation:isolate}
-.stage .phone{position:relative;z-index:4}
-.hero-pet{
-  position:absolute;z-index:5;pointer-events:none;user-select:none;
-  height:auto;object-fit:contain;
-  filter:drop-shadow(0 18px 24px rgba(0,0,0,.24));
-}
-.hero-dog{width:188px;left:50%;margin-left:-288px;bottom:54px}
-.hero-cat{width:138px;left:50%;margin-left:138px;bottom:48px}
-
-@media(max-width:1000px){
-  .hero-dog{width:172px;margin-left:-260px;bottom:54px}
-  .hero-cat{width:126px;margin-left:126px;bottom:48px}
-}
-@media(max-width:620px){
-  .hero-dog{width:142px;margin-left:-198px;bottom:52px}
-  .hero-cat{width:104px;margin-left:94px;bottom:46px}
-}
-@media(max-width:430px){
-  .hero-dog{width:132px;margin-left:-190px;bottom:50px}
-  .hero-cat{width:96px;margin-left:92px;bottom:44px}
-}
-@media(max-width:350px){
-  .hero-dog{width:116px;margin-left:-168px;bottom:48px}
-  .hero-cat{width:86px;margin-left:82px;bottom:42px}
-}
-/* ===== FIM DA ÚNICA ALTERAÇÃO VISUAL ===== */
-
 </style>
 </head>
 <body>
@@ -829,8 +798,6 @@ footer .base{border-top:1px solid rgba(255,255,255,.09);margin-top:36px;padding-
           </div>
         </div>
       </div>
-      <img class="hero-pet hero-dog" src="vfc-dog-premium.png" alt="" aria-hidden="true">
-      <img class="hero-pet hero-cat" src="vfc-cat-premium.png" alt="" aria-hidden="true">
       <div class="hero-dots" id="heroDots" aria-label="Navegar entre telas do app">
         <button class="hero-dot active" data-idx="0" aria-label="Tela Início"></button>
         <button class="hero-dot" data-idx="1" aria-label="Tela Pacientes"></button>
