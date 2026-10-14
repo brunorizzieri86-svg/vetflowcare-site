@@ -1,3 +1,17 @@
+# Verificação da atualização S.V3.2 — 14/10/2026
+
+- Corrigida a junção “clínicavai”: texto contínuo “Sua clínica vai com você.”, sem quebra oculta entre as palavras.
+- Abertura com branco e azul claro, título e botão azuis; ornamentos, botão flutuante e moldura do celular harmonizados em azul.
+- Todas as imagens locais existem; imagens incorporadas decodificadas e verificadas.
+- Cinco referências às telas do aplicativo mantêm os caminhos originais e a mesma ordem.
+- Links do app e WhatsApp preservados; não foi repetida a consulta HTTP nesta atualização.
+- Pacote atualizado e integridade ZIP conferida.
+- Revisão visual em navegador real pendente: o navegador do Playwright não está instalado. Não foi atribuída nova nota AQC nem aprovação visual.
+
+---
+
+Auditoria técnica anterior, referente à S.V3.1 (registro histórico):
+
 # Auditoria VetFlowCare — site Home Care S.V3.1
 
 Data: 14/10/2026. Repositório de referência: https://github.com/brunorizzieri86-svg/vetflowcare-site
