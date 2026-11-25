@@ -19,3 +19,68 @@
  .hero h1 em{position:relative;isolation:isolate;display:inline-block}
  .hero h1 em:before{content:'';position:absolute;inset:0 -6px;background:linear-gradient(90deg,transparent 35%,rgba(248,252,253,.85) 70%,rgba(248,252,253,.96) 91%,transparent 100%);filter:blur(6px);pointer-events:none;z-index:-1}
 }
+/* ===== Instagram — seção "Siga o VetFlowCare" (S.V2.2) ===== */
+.insta{max-width:1180px;margin:0 auto 50px;padding:58px 60px;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);column-gap:64px;align-items:center;position:relative;overflow:hidden;isolation:isolate;border-radius:24px;color:#fff;background:radial-gradient(circle at 86% 14%,rgba(22,176,170,.28),transparent 48%),linear-gradient(100deg,#123d67,#164c71)}
+.insta:before,.insta:after{content:'';position:absolute;border-radius:50%;pointer-events:none;z-index:-1;border:2px solid rgba(143,225,216,.15)}
+.insta:before{width:420px;height:420px;right:-150px;top:-170px}
+.insta:after{width:300px;height:300px;right:-95px;top:-110px;border-color:rgba(143,225,216,.1)}
+.insta-copy .eyebrow{display:flex;align-items:center;gap:10px;color:#8fe1d8;font-size:14px;letter-spacing:0;margin-bottom:18px}
+/* cores do Instagram: degradê da marca (bolinhas/azulejo/anel) e degradê mais escuro nos botões (texto branco legível, contraste >= 4,5:1) */
+.ig-tile{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:30px;height:30px;border-radius:9px;color:#fff;background:#d6249f;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);box-shadow:0 5px 14px rgba(214,36,159,.42)}
+.ig-tile svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.insta-copy h2{font-size:clamp(30px,3.2vw,40px);font-weight:550;line-height:1.26;letter-spacing:-1.3px;color:#fff}
+.insta-copy h2 em{color:#8fe1d8}
+.insta-copy>p{color:#c4dbe7;font-size:16px;line-height:1.75;margin-top:20px;max-width:470px}
+.insta-pillars{display:grid;gap:18px;margin-top:28px}
+.insta-pillars>div{display:flex;align-items:flex-start;gap:14px}
+.insta-pillars .icon{margin-top:2px;color:#8be0d5}
+.insta-pillars strong{display:block;font-size:14px;font-weight:600;color:#fff;line-height:1.5}
+.insta-pillars small{display:block;font-size:12.5px;line-height:1.6;color:#bfd5e2;margin-top:2px}
+.insta-copy>.button{gap:10px;margin-top:32px;min-height:54px;padding:14px 28px;border:0;border-radius:13px;font-size:15px;color:#fff;background:#cf2a85;background:linear-gradient(100deg,#d14b29 0%,#cf2a85 42%,#8a3ab9 82%,#5b51d8 100%);box-shadow:0 12px 30px rgba(207,42,133,.4),inset 0 1px 0 rgba(255,255,255,.22)}
+.insta-copy>.button:hover{background:#cf2a85;background:linear-gradient(100deg,#d14b29 0%,#cf2a85 42%,#8a3ab9 82%,#5b51d8 100%);box-shadow:0 16px 38px rgba(207,42,133,.5),inset 0 1px 0 rgba(255,255,255,.22)}
+.insta-copy>.button svg{width:20px;height:20px;flex-shrink:0;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.insta-card{justify-self:center;width:100%;max-width:330px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 30px 28px;border-radius:26px;background:linear-gradient(160deg,#fff 0%,#f2fbf9 100%);color:var(--blue);box-shadow:0 34px 70px rgba(2,16,32,.42);transition:transform .25s,box-shadow .25s}
+.insta-card:hover{transform:translateY(-5px);box-shadow:0 42px 80px rgba(2,16,32,.46)}
+.insta-avatar{position:relative;display:block;width:108px;height:108px;padding:4px;border-radius:50%;background:#d6249f;background:linear-gradient(45deg,#fcb045 0%,#fd5949 30%,#d6249f 62%,#833ab4 100%);flex-shrink:0}
+/* faixa branca que esconde as letras do logotipo: ancorada na BORDA externa (background-origin:border-box) para passar por baixo da borda branca;
+   ancorada no padding-box ela ficava 1–2 px curta em posições fracionárias/telas 2x–4x e deixava escapar um fio do logotipo (SITE-009) */
+.insta-photo{display:block;width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:linear-gradient(#fff,#fff) 0 100% / 100% 13.5% no-repeat,url(assets/logo.jpg) 47.7% 10.7% / 179% no-repeat #fff;background-origin:border-box,padding-box}
+.insta-badge{position:absolute;right:-3px;bottom:-1px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#d6249f;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);border:3px solid #fff;color:#fff;box-shadow:0 4px 10px rgba(214,36,159,.4)}
+.insta-badge svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.insta-card>strong{margin-top:20px;font:650 21px/1.2 Manrope,Arial,sans-serif;letter-spacing:-.5px;color:var(--blue)}
+.insta-tag{margin-top:6px;font-size:13px;color:var(--text)}
+.insta-qr{display:block;width:160px;height:160px;margin-top:22px;padding:9px;border-radius:16px;background:#fff;border:1px solid #d3e6e4;box-shadow:0 10px 24px rgba(22,90,100,.08)}
+.insta-qr svg{display:block;width:100%;height:100%}
+.insta-card>small{display:block;margin-top:15px;font-size:12.5px;line-height:1.6;color:var(--text)}
+@media(max-width:1000px){.insta{margin-inline:5%;padding:46px 40px;column-gap:34px}.insta-copy h2{font-size:33px}.insta-card{padding:28px 22px 24px;max-width:290px}.insta-qr{width:136px;height:136px}}
+@media(max-width:700px){
+.insta{display:flex;flex-direction:column;align-items:stretch;padding:34px 24px 30px;border-radius:18px;margin-bottom:30px;background:radial-gradient(circle 300px at 100% 0,rgba(22,176,170,.24),transparent),linear-gradient(100deg,#123d67,#164c71)}
+/* anéis decorativos só no canto superior, ACIMA do título (base do anel maior a 68px; o título começa a ~78px): não cruzam o texto em nenhuma largura.
+   (SITE-004 tinha deixado a base a 90px: entre 540 e 700px a 1ª linha do título chega até o canto e o anel a cruzava — contraste 3,8:1, achado pela varredura de larguras, SITE-013) */
+.insta:before{width:180px;height:180px;right:-62px;top:-112px}.insta:after{width:120px;height:120px;right:-40px;top:-72px}
+.insta-copy{display:contents}
+.insta-copy .eyebrow{font-size:13px;margin-bottom:14px}
+.insta-copy h2{font-size:29px;letter-spacing:-1px}.insta-copy h2 br{display:none}
+.insta-copy>p{font-size:15px;margin-top:16px;max-width:none}
+.insta-card{order:1;max-width:none;margin-top:24px;display:grid;grid-template-columns:62px 1fr auto;column-gap:14px;align-items:center;text-align:left;padding:14px 16px;border-radius:16px;box-shadow:0 14px 30px rgba(2,16,32,.32)}
+.insta-card:hover{transform:none}
+.insta-avatar{grid-row:1/span 2;width:62px;height:62px;padding:3px}
+.insta-photo{border-width:2px}
+.insta-badge{width:24px;height:24px;border-width:2px;right:-4px;bottom:-3px}.insta-badge svg{width:12px;height:12px}
+.insta-card>strong{grid-column:2;margin:0;font-size:17px}
+.insta-tag{grid-column:2;margin:2px 0 0;font-size:12px}
+.insta-qr,.insta-card>small{display:none}
+.insta-card:after{content:'›';content:'›' / '';grid-column:3;grid-row:1/span 2;font:400 30px/1 Manrope,Arial,sans-serif;color:#d6249f}
+.insta-pillars{order:2;margin-top:26px;gap:16px}
+.insta-copy>.button{order:2;width:100%;margin-top:26px}
+}
+/* <=370px: o azulejo colorido empurra o texto do eyebrow ~40px para a direita; os anéis decorativos saem mais para o canto para não cruzar as últimas letras (contraste medido 4,06:1 a 320px — SITE-013) */
+@media(max-width:370px){.insta{padding:30px 18px 26px}.insta:before{right:-98px}.insta:after{right:-76px}.insta-card{grid-template-columns:54px 1fr auto;column-gap:12px;padding:12px 14px}.insta-avatar{width:54px;height:54px}.insta-card>strong{font-size:15.5px}}
+/* Modo de alto contraste do Windows (forced-colors): o botão (sem borda no modo normal) ganha borda visível como os demais botões do site, e o QR mantém
+   fundo branco + módulos escuros — senão o fundo vira preto e o QR (azul-escuro) fica ilegível para a câmera (achado na verificação em forced-colors) */
+@media (forced-colors:active){.insta-copy>.button{border:2px solid currentColor}.insta-qr{forced-color-adjust:none}}
+/* Versão do site (rodapé, discreta, canto inferior direito) */
+footer>small{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.site-ver{flex-shrink:0;font-weight:600;letter-spacing:.07em;color:#8a9ca5;user-select:none}
+/* ===== Autoria — VetFlowCare Site S.V2.2 · B&G Systems · vfc-web-sig-fMDKYJ4-bg26 ===== */
+:root{--vfc-sig:"vfc-web-sig-fMDKYJ4-bg26"}
